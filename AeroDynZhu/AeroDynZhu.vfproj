@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{53708C51-43E6-4790-A74E-9920CC3C9B11}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Preprocess="preprocessYes" RuntimeLibrary="rtMultiThreadedDebug" UseMkl="mklSequential"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole" StackReserveSize="409600000" AdditionalDependencies="E:\TiM_Programing\AeroDynDll\x64\Release\AeroDynDll.lib E:\TiM_Programing\discon_ZHU\discon_ZHU\x64\Release\discon_ZHU.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="AeroDyn">
+		<File RelativePath=".\AeroDyn.f90"/>
+		<File RelativePath=".\AeroDyn_IO.f90"/>
+		<File RelativePath=".\AeroDyn_Types.f90"/></Filter>
+		<Filter Name="AeroDyn_Driver">
+		<File RelativePath=".\AeroDyn_Driver.f90"/>
+		<File RelativePath=".\AeroDyn_Driver_Subs.f90"/>
+		<File RelativePath=".\AeroDyn_Driver_Types.f90"/></Filter>
+		<Filter Name="AirFoil_Info">
+		<File RelativePath=".\AirfoilInfo.f90"/>
+		<File RelativePath=".\AirfoilInfo_Types.f90"/></Filter>
+		<Filter Name="BEMT">
+		<File RelativePath=".\BEMT.f90"/>
+		<File RelativePath=".\BEMT_Types.f90"/>
+		<File RelativePath=".\BEMTUncoupled.f90"/>
+		<File RelativePath=".\fmin_fcn.f90"/>
+		<File RelativePath=".\mod_root1dim.f90"/></Filter>
+		<Filter Name="DBEMT">
+		<File RelativePath=".\DBEMT.f90"/>
+		<File RelativePath=".\DBEMT_Types.f90"/></Filter>
+		<Filter Name="NWTC_Library">
+		<Filter Name="NetLib">
+		<Filter Name="FitPack">
+		<File RelativePath=".\dierckx_fitpack.f"/>
+		<File RelativePath=".\NWTC_FitPack.f90"/></Filter>
+		<File RelativePath=".\NWTC_LAPACK.f90"/></Filter>
+		<File RelativePath=".\ModMesh.f90"/>
+		<File RelativePath=".\ModMesh_Mapping.f90"/>
+		<File RelativePath=".\ModMesh_Types.f90"/>
+		<File RelativePath=".\NWTC_Base.f90"/>
+		<File RelativePath=".\NWTC_IO.f90"/>
+		<File RelativePath=".\NWTC_Library.f90"/>
+		<File RelativePath=".\NWTC_Library_Types.f90"/>
+		<File RelativePath=".\NWTC_Num.f90"/>
+		<File RelativePath=".\SingPrec.f90"/>
+		<File RelativePath=".\SysIVF.f90"/></Filter>
+		<Filter Name="UnsteadyAero">
+		<File RelativePath=".\UnsteadyAero.f90"/>
+		<File RelativePath=".\UnsteadyAero_Types.f90"/></Filter>
+		<Filter Name="WindInFlow">
+		<Filter Name="InflowWind Driver">
+		<File RelativePath=".\WindInFlow\InflowWind_Driver.f90"/>
+		<File RelativePath=".\WindInFlow\InflowWind_Driver_Subs.f90"/>
+		<File RelativePath=".\WindInFlow\InflowWind_Driver_Types.f90"/></Filter>
+		<Filter Name="RegistryFiles">
+		<File RelativePath=".\WindInFlow\IfW_BladedFFWind_Types.f90"/>
+		<File RelativePath=".\WindInFlow\IfW_FFWind_Base_Types.f90"/>
+		<File RelativePath=".\WindInFlow\IfW_HAWCWind_Types.f90"/>
+		<File RelativePath=".\WindInFlow\IfW_TSFFWind_Types.f90"/>
+		<File RelativePath=".\WindInFlow\IfW_UniformWind_Types.f90"/>
+		<File RelativePath=".\WindInFlow\IfW_UserWind_Types.f90"/>
+		<File RelativePath=".\WindInFlow\InflowWind_Types.f90"/>
+		<File RelativePath=".\WindInFlow\Lidar_Types.f90"/></Filter>
+		<File RelativePath=".\WindInFlow\IfW_4Dext.f90"/>
+		<File RelativePath=".\WindInFlow\IfW_4Dext_Types.f90"/>
+		<File RelativePath=".\WindInFlow\IfW_BladedFFWind.f90"/>
+		<File RelativePath=".\WindInFlow\IfW_FFWind_Base.f90"/>
+		<File RelativePath=".\WindInFlow\IfW_HAWCWind.f90"/>
+		<File RelativePath=".\WindInFlow\IfW_TSFFWind.f90"/>
+		<File RelativePath=".\WindInFlow\IfW_UniformWind.f90"/>
+		<File RelativePath=".\WindInFlow\IfW_UserWind.f90"/>
+		<File RelativePath=".\WindInFlow\InflowWind.f90"/>
+		<File RelativePath=".\WindInFlow\InflowWind_Subs.f90"/>
+		<File RelativePath=".\WindInFlow\Lidar.f90"/></Filter>
+		<File RelativePath=".\VersionInfo.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>
